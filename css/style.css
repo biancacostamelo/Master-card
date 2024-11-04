@@ -1,0 +1,26 @@
+body{
+    background-color: #080913;
+}
+h1, p, a{
+    color: aliceblue;
+    text-decoration: none;
+}
+h4, .colorv{
+    color: #41E660;
+}
+/* #home{
+    height: 100vh;
+} */
+.quadrado{
+    width: 450px;
+    height: 253px;
+    background-image: url('../img/cartao.png');
+    background-size: cover;
+    background-position: center;
+}
+.flex-direcion-col{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
