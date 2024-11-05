@@ -10,40 +10,59 @@
 </head>
 
 <body>
+    <section id="home">
+        <video autoplay muted loop>
+            <source src="/video/bgHom.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
         <div class="container">
-            <section id="home">
-                <nav>
-                    <div class="row mt-4">
-                        <div class="col-sm-6">
-                            <h4>mastermoney</h4>
-                        </div>
-                        <div class="col-sm-6 " align="center">
-                            <a href="#home" class="p-2">HOME</a>
-                            <a href="#home" class="p-2">HOME</a>
-                            <a href="#home" class="p-2">HOME</a>
-                            <a href="#home" class="p-2">HOME</a>
-                            <a href="#home" class="m-5">Abrir uma conta</a>
-                        </div>
-                    </div>
-                </nav>
-                <main>
-                    <div class="row" style="height: 80vh;">
-                        <div class="col-md-6 flex-direcion-col">
-                            <h1>Lorem ipsum dolor sit amet consectetur adipisi.<span class="colorv">Tempore eius sed</span> soluta similique nobis? </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p><a>GET STARTED</a></p>
-                        </div>
-                        <div class="col-md-6 imghome d-flex align-content-center flex-wrap justify-content-center">
-                            <div class="quadrado">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid mt-4">
+                    <h4><a class="navbar-brand" href="#home">mastermoney</a></h4>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a href="#home" class="p-2 nav-link">Cartão</a>
+                            <a href="#home" class="p-2 nav-link">Faq</a>
+                            <a href="#home" class="p-2 nav-link">Contato</a>
+                            <a href="#home" class="p-2 nav-link active" aria-current="page">Sobre</a>
 
-                            </div>
-                            <!-- <img src="img/cartao.png" alt=""> -->
+                            <a href="#home" class="nav-link ml-5">Abrir uma conta</a>
                         </div>
                     </div>
-                </main>
-            </section>
+                </div>
+            </nav>
+
+            <main style="height: 70vh;" class="flex-direcion-col">
+                <div class="row">
+                    <div class="col-md-6 flex-direcion-col p-2">
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisi.<span class="colorv">Tempore eius sed</span>
+                            soluta similique nobis? </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="btn-home">
+                            <a href="#">GET STARTED</a>
+                            <a href="#">
+                                <div class="btn-seta p-2">➚</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-content p-4">
+                        <div class="quadrado">
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-    <script src="../index.js"></script>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script src="../index.js"> </script>
 </body>
 
 </html>
