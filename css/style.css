@@ -3,9 +3,15 @@ body{
     font-size: 14px;
 }
 
-h1, p, a{
+h1, p, a, h2, h2, h5, h6{
     color: aliceblue !important;
     text-decoration: none !important;
+}
+h3 {
+    font-size: 50px;
+    background: linear-gradient(to right, #235bc2,#21ffe1 40%);
+    background-clip: text;
+    color: transparent;
 }
 h4, .colorv{
     color: #41E660;
@@ -14,6 +20,38 @@ h4, .colorv{
     position: relative;
     overflow: hidden;
     height: 100vh;
+    background: linear-gradient(#ffffff00 40%, #080913 90%);
+}
+@media (max-width: 1178px) {
+    #home{
+        height: auto;
+    }
+}
+#vantagens{
+    border: 2px solid #ffffff7c;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.h-a{
+    height: 100% !important;
+}
+.fundo-vant{
+    width: 90%;
+    height: 80%;
+    border-radius: 25px;
+}
+.card-vant{
+    border: 1px solid transparent;
+    border-image: linear-gradient(#08807094, #080929);
+    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 #home video{
     position: absolute;
@@ -21,14 +59,18 @@ h4, .colorv{
     left: 0px;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz o vídeo cobrir toda a área da seção */
+    object-fit: cover;
     z-index: -1;
     opacity: 25%;
 }
+.backgroundgradient{
+    background-color: #080913;
+}
 #home .container {
     position: relative;
-    z-index: 1; /* Garante que o conteúdo fique sobre o vídeo */
+    z-index: 1;
 }
+
 .quadrado{
     width: 100%;
     height: 273px;
@@ -36,6 +78,8 @@ h4, .colorv{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 .flex-direcion-col{
     display: flex;
