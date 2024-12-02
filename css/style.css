@@ -6,7 +6,7 @@ h1, h2{
     color: aliceblue;
     font-weight: lighter;
 }
-h1, p, a, h2, h2, h5, h6{
+h1, p, a, h2, h2, h5, h6, span{
     color: aliceblue !important;
     text-decoration: none !important;
 }
@@ -32,14 +32,15 @@ h4, .colorv{
 }
 #vantagens{
     border: 2px solid #ffffff7c;
-    margin: 10px;
+    margin: 10px 1px 10px 1px;
     border-radius: 20px;
     overflow: hidden;
-    padding-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
 #conteudo{
     border: 2px solid #ffffff7c;
-    margin: 10px;
+    margin: 10px 1px 10px 1px;
     border-radius: 20px;
     overflow: hidden;
     padding-top: 70px;
@@ -68,7 +69,12 @@ h4, .colorv{
     justify-content: space-around;
     margin-bottom: 10px;
 }
-
+.card-vant2{
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
 #home video{
     position: absolute;
     top: 0px;
@@ -79,6 +85,7 @@ h4, .colorv{
     z-index: -1;
     opacity: 25%;
 }
+
 .backgroundgradient{
     background-color: #080913;
 }
@@ -183,8 +190,6 @@ h4, .colorv{
         width: 100%;
         justify-content: center;
     }
-}
-@media (max-width: 460px) {
     .btn-seta{
         margin: 1rem !important;
     }
@@ -216,4 +221,51 @@ h4, .colorv{
         display: none;
     }
 }
-
+.p-0{
+    padding-left: 0 !important;
+}
+#dados{
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background: linear-gradient(#ffffff00 40%, #080913 90%);
+}
+#dados img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#duvidasf{
+    background-color: #10111f;
+    border-radius: 20px;
+    padding: 50px 0px 50px 0px;
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.faq-question {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-answer {
+    padding: 10px;
+    border-radius: 5px;
+    display: none;  /* Inicialmente escondido */
+    margin-top: 10px;
+}

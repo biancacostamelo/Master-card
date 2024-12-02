@@ -23,3 +23,18 @@ imagem.addEventListener('mousemove', updateRotation);
 imagem.addEventListener('mouseleave', () => {
   imagem.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });
+
+
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+      const answer = item.nextElementSibling;
+
+      // Alternar entre esconder e mostrar a resposta
+      if (answer.style.display === "block") {
+          answer.style.display = "none";
+      } else {
+          answer.style.display = "block";
+      }
+  });
+});
+
