@@ -2,6 +2,9 @@ body{
     background-color: #080913;
     font-size: 14px;
 }
+#h2{
+    color: black !important;
+}
 h1, h2{
     color: aliceblue;
     font-weight: lighter;
@@ -268,4 +271,64 @@ h4, .colorv{
     border-radius: 5px;
     display: none;  /* Inicialmente escondido */
     margin-top: 10px;
+}
+#contato{
+    background-color: #080913;
+    margin: 12px 0px 12px 0px;
+}
+.form{
+    background-color: #41E660;
+    border-radius: 15px;
+    padding: 50px 30px 50px 30px;
+}
+.input-ctt{
+    background-color: transparent;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.445) !important;
+    border: none;
+    width: 100%;
+}
+.label-ctt{
+    font-size: 11pt;
+    color: black;
+    margin-bottom: 5px;
+}
+.btn-ctt{
+    background-color: transparent;
+    height: 45px;
+    width: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 25px;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 35px;
+}
+.btn-ctt a{
+    color: #000000 !important;
+
+}
+.btn-seta2{
+    background-color: #000000;
+    color: #41E660;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    position: absolute;
+    bottom: 4px;
+    right: 5px;
+}
+.btn-seta3{
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.redessociais{
+    height: 100%;
 }
