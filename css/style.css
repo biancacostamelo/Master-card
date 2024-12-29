@@ -25,6 +25,18 @@ span {
     text-decoration: none !important;
 }
 
+.navbar-nav a:hover{
+    text-decoration: underline !important;
+    color: #ffffffce !important;
+    transition: all 0.2s !important;
+}
+
+.ahover a:hover{
+    text-decoration: underline !important;
+    padding-bottom: 9px;
+    transition: all 0.2s;
+}
+
 h3 {
     font-size: 50px;
     background: linear-gradient(to right, #235bc2, #21ffe1 40%);
@@ -68,11 +80,62 @@ h4,
     padding-bottom: 70px;
 }
 
-@media (max-width: 990px) {
+.boxtext {
+    width: 350px;
+}
+
+@media (max-width: 991px) {
     .aligncenter {
         text-align: center;
         align-items: center;
     }
+
+    .boxtext {
+        width: auto;
+    }
+
+    .contentDadosStart {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .contentDadosEnd {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .contentDadosCenter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center;
+    }
+}
+
+
+.contentDadosStart {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.contentDadosEnd {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.contentDadosCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .h-a {
@@ -124,8 +187,8 @@ h4,
 
 .quadrado {
     width: 100%;
-    height: 273px;
-    background-image: url('../img/cartao2.png');
+    height: 343px;
+    background-image: url('../img/attcartao-borda.png');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -170,7 +233,7 @@ h4,
 .btn-home {
     --green: #41E660;
     height: 45px;
-    width: 170px;
+    width: 160px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -189,6 +252,8 @@ h4,
 .btn-home:hover {
     color: #82ffc9;
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+    height: 50px;
+    width: 165px;
 }
 
 .btn-home:before {
@@ -206,21 +271,6 @@ h4,
     transform: translateX(15em);
 }
 
-/* .btn-home{
-    border: 1px solid #41E660;
-    height: 45px;
-    width: 170px;
-    text-wrap: nowrap;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 25px;
-    transition: 0.2s ease-out;
-}
-.btn-home:hover{
-    box-shadow: 0 1px 15px 0 rgba(86, 184, 149, 0.42), inset 0 1px 15px 0 rgba(133,235, 191, 0.8);
-} */
 @media (max-width: 460px) {
     .btn-home {
         width: 100%;
@@ -242,6 +292,9 @@ h4,
     align-items: center;
     justify-content: center;
     font-size: x-large;
+    position: absolute;
+    top: 3px;
+    right: 4px;
 }
 
 .btn-seta1 {
@@ -267,8 +320,8 @@ h4,
 }
 
 #dados {
+    height: auto;
     border-radius: 20px;
-    padding-bottom: 50px;
     padding-top: 50px;
     position: relative;
     overflow: hidden;
@@ -282,8 +335,8 @@ h4,
     left: 0px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     z-index: -1;
+    opacity: 0.7;
 }
 
 #duvidasf {
@@ -305,7 +358,6 @@ h4,
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
     display: flex;
     justify-content: space-between;
 }
@@ -314,7 +366,6 @@ h4,
     padding: 10px;
     border-radius: 5px;
     display: none;
-    /* Inicialmente escondido */
     margin-top: 10px;
 }
 
@@ -326,8 +377,26 @@ h4,
 .form {
     background-color: #41E660;
     border-radius: 15px;
-    padding: 50px 80px 55px 80px;
+    padding: 50px 55px;
+    
 }
+
+.mr-1{
+    margin-right: 7px;
+}
+
+@media (max-width: 768px) {
+    .form{
+        margin: 7px;
+    }
+    .mr-1{
+        margin: 7px;
+    }
+    .borderBt{
+        border-bottom: 1px solid #ffffff57 ;
+    }
+}
+
 
 .input-ctt {
     background-color: transparent;
@@ -335,6 +404,7 @@ h4,
     border-bottom: 1px solid rgba(0, 0, 0, 0.445) !important;
     border: none;
     width: 100%;
+    outline: none;
 }
 
 .label-ctt {
@@ -390,9 +460,10 @@ h4,
 }
 
 footer {
-    height: 250px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
+    height: auto;
+    padding: 50px 50px;
+}
+
+#ablack{
+    color: black !important;
 }

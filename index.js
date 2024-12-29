@@ -38,3 +38,44 @@ document.querySelectorAll('.faq-question').forEach(item => {
   });
 });
 
+
+  // Função para animar os números
+  function animateNumber(element) {
+    const target = parseInt(element.getAttribute('data-target'));
+    let current = 0;
+    const increment = target / 100; // Aumentando os números gradualmente
+
+    // Função que vai incrementar o número até atingir o valor alvo
+    const updateNumber = () => {
+      if (current < target) {
+        current += increment;
+        element.textContent = Math.floor(current) + 'M';
+        requestAnimationFrame(updateNumber);
+      } else {
+        element.textContent = `${target} M`; // Garante que o número final é atingido
+      }
+    };
+
+    updateNumber();
+  }
+
+  // Criando o Intersection Observer
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Quando a seção #dados estiver 70% visível, inicia a animação dos números
+        const numbers = entry.target.querySelectorAll('.number');
+        numbers.forEach(number => {
+          animateNumber(number);
+        });
+        observer.unobserve(entry.target); // Desativa o observer após a animação
+      }
+    });
+  }, {
+    threshold: 0.7  // Quando 70% do elemento estiver visível
+  });
+
+  // Observando a seção #dados
+  const dadosSection = document.querySelector('#dados');
+  observer.observe(dadosSection);
+
